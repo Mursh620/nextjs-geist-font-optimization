@@ -1,0 +1,28 @@
+{
+  "dfx": {
+    "version": "0.27.0"
+  },
+  "version": 1,
+  "canisters": {
+    "aegis_user_vault": {
+      "type": "rust",
+      "package": "aegis_user_vault",
+      "candid": "src/aegis_user_vault/aegis_user_vault.did"
+    },
+    "aegis_aggregator": {
+      "type": "rust", 
+      "package": "aegis_aggregator",
+      "candid": "src/aegis_aggregator/aegis_aggregator.did"
+    },
+    "aegis_frontend": {
+      "type": "assets",
+      "source": ["src/aegis_frontend/dist/"]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
